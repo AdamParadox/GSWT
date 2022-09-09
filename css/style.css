@@ -116,7 +116,7 @@ header .burger_icon {
     cursor: pointer;
    display: none;
    position: absolute;
-   top: 16px;
+   top: 0px;
    right: 25px;
    height: 35px;
    width: auto;
