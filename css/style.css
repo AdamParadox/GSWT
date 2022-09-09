@@ -39,6 +39,7 @@ body{
     font-size: 20px;
     line-height: 140.62%;
     color:#000;
+    -webkit-tap-highlight-color: transparent;
 }
 .wrapper{
     display: flex;
