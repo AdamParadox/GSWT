@@ -116,7 +116,7 @@ header .burger_icon {
     cursor: pointer;
    display: none;
    position: absolute;
-   top: 0px;
+   top: 16px;
    right: 25px;
    height: 35px;
    width: auto;
@@ -130,7 +130,7 @@ header .burger_icon {
     position: fixed;
     height: 100%;
     background-color: #121212;
-    top: -16px;
+    top: 0px;
     left: 0;
   }
   header .mobile-nav .active {
