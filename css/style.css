@@ -1,0 +1,679 @@
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Regular.woff2') format('woff2'),
+      url('../fonts/Gilroy-Regular.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Bold.woff2') format('woff2'),
+      url('../fonts/Gilroy-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Semibold.woff') format('woff2'),
+      url('../fonts/Gilroy-Semibold.woff2') format('woff');
+    font-weight: semibold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Gilroy';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140.62%;
+    color:#000;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.container {
+    max-width: 1450px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.btn{
+    display: inline-block;
+    color: #F7941E;
+    font-size: 18px;
+    line-height: 22px;
+    /* Сверху | Справа | Снизу | Слева */
+    padding: 13px 20px 13px 20px;
+    border: 2px solid #F7941E;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+.btn:hover{
+    background: #F7941E;
+    color: #fff;
+}
+
+.header{
+    background-color: #FAFAFA;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 20;
+}
+.bottom_line{
+    border-bottom: 3px solid #F7941E;
+}
+.header_container{  
+    height: 70px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.header_logo{
+    font-family: 'Homemade Apple', cursive;
+    color:#231F20;
+}
+.menu_list{
+    display: flex;
+}
+.menu_item + .menu_item{
+    margin-left: 31px;
+}
+.menu_link{
+    font-size: 18px;
+    line-height: 22px;
+    color: rgb(0, 0, 0);
+}
+
+
+.btn_mobile{
+    margin-top: 10px;
+}
+
+
+.menu_item_burg_one{
+    margin-left: 31px;
+    margin-top: 20px;
+}
+
+header .burger_icon {
+    cursor: pointer;
+   display: none;
+   position: absolute;
+   top: 16px;
+   right: 25px;
+   height: 35px;
+   width: auto;
+  }
+  header .mobile-nav {
+    padding: 20px;
+    width: 70%;
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    height: 100%;
+    background-color: #121212;
+    top: -16px;
+    left: 0;
+  }
+  header .mobile-nav .active {
+    color: #42b983 !important;
+  }
+  header .mobile-nav .link {
+    padding: 15px 0;
+    color: #dbdbdb;
+  }
+
+  .mob_li {
+    font-size: 22px !important;
+    margin-bottom: 15px !important;
+    margin-left: 0px !important;
+  }
+
+  .slide-fade{
+    display: none;
+  }
+  .mobile-nav a{
+    color: #fff !important;
+  }
+  .open_burger{
+    display: block !important;
+  }
+  .slide-fade-enter-active {
+    transition: all 0.5s ease-out !important;
+  }
+   .slide-fade-leave-active {
+    transition: all 0.5s cubic-bezier(1, 0.5, 0.8, 1) !important ;
+  }
+   .slide-fade-enter-from,  .slide-fade-leave-to {
+    transform: translateX(-250px) !;
+  }
+
+
+
+
+
+.girlfriend{
+    margin-top: 70px;
+    margin-bottom: 96px;
+}
+
+.girlfriend_container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.girlfriend_item{
+    width: 50%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F1F1F2;
+}
+.girlfriend_item_img{
+    width: 100%;
+
+}
+.girlfriend_item_title{
+    font-family: 'Gilroy';
+    font-size: 56px;
+    line-height: 69px;
+    margin-bottom: 36px;
+    max-width: 433px;
+}
+.girlfriend_item_button1{
+    margin-top: 52px;
+}
+
+.girlfriend_item_subtitle{
+    margin-bottom: 23px;
+    font-size: 32px;
+    line-height: 140.62%;
+    max-width: 441px;
+}
+.girlfriend_item_text2{
+    max-width: 441px;
+
+}
+.girlfriend_item_button2{
+    margin-top: 35px;
+}
+
+
+
+
+
+
+
+
+.occasions{
+    margin-bottom: 137px;
+}
+.occasions_container{
+    text-align: center;
+    justify-content: center;
+
+}
+
+.occasions_title{
+    font-size: 32px;
+    line-height: 140.62%;
+    margin-bottom: 23px;
+}
+
+.occasions_subtitle{
+    margin-bottom: 64px;
+}
+
+.occasions_cards{
+    display: flex;
+    justify-content: center;
+
+}
+
+.occasions_card{
+    width: 270px;
+    height: 100%;
+}
+.occasions_card:hover{
+    background-color: #fff;
+    filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.05));
+}
+
+.occasions_card + .occasions_card{
+    margin-left: 30px;
+}
+.card_img{
+    height: 100%;
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+}
+.card_main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 24px;
+  min-height: 166px;
+  background-color: #FAFAFA;
+}
+.card_title{
+    margin: 0;
+}
+
+.card_bottom_text{
+    display: flex;
+    margin-top: auto;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.getstarted{
+  margin-bottom: 88px;
+  background-color: #F7941E;
+
+}
+.getstarted_container{  
+    height: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
+.getstarted_text{
+    margin-right: 20px;
+}
+.getstarted_title{
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 140.62%;
+}
+
+.getstarted_subtitle{
+    font-size: 32px;
+line-height: 140.62%;
+}
+
+
+.getstarted_btn{
+    font-size: 18px;
+    line-height: 22px;
+    padding: 10px 24px 10px 25px;
+    border: 1px solid #000;
+    color: #000;
+}
+.getstarted_btn + .getstarted_btn{
+    margin-left: 16px;
+}
+.getstarted_btn:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+.blogs_top_text{
+    text-align: center;
+}
+.blogs_title{
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 23px;
+}
+.blogs_subtitle{
+    margin-bottom: 71px;
+}
+.blogs_bigcard{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.bigcard_main{
+    background-color:#231F20;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* Сверху | Справа | Снизу | Слева */
+    padding: 63px 200px 49px 78px;    
+    mAX-width: 770px;
+}
+.blogs_image{
+    height: 100%;
+}
+.bigcard_main div{
+   color:#fff; 
+}
+.bigcard_title{
+    font-size: 14px;
+    margin-bottom: 27px;
+}
+.bigcard_secondary_text{
+    font-size: 48px;
+    line-height: 58px;
+    margin-bottom: 60px;
+}
+
+
+
+
+.blogs_smallcards{
+    display: flex;
+    margin-bottom: 80px;
+    justify-content: center;
+}
+
+
+
+
+.small_card{
+    flex-basis: 570px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #FFF;;
+    padding: 50px;
+    position:relative; 
+    justify-content: space-between;
+   
+}
+
+.small_card + .small_card{
+    margin-left: 30px;
+}
+.small_card:hover{
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+}
+.smallcard_title{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 140.62%;
+    margin-bottom: 16px;
+    max-width: 474px;
+}
+.smallcard_secondary_text{
+    font-size: 18px;
+    line-height: 140.62%;   
+
+}
+.smallcard_bottom_text{
+    font-size: 14px;
+    line-height: 140.62%;
+    margin-bottom: 20px;
+    position: absolute;
+    bottom: 0;
+}
+
+
+
+
+
+.footer_menu{
+    margin-bottom: 43px;
+}
+.footer_menu_list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.footer_menu_item + .footer_menu_item{
+    margin-left: 54px;
+}
+.footer_menu_link{
+    font-weight: bold;
+    font-size: 14px;
+    color: #000000;
+
+}
+.footer_logo{
+    font-family: 'Homemade Apple', cursive;
+    color: #F7941E;
+    margin: 0 141px;
+}
+.footer_box_line{
+    justify-content: center;
+    display: flex;
+}
+.footer_line{
+    width: 1000px;
+    height: 2px;
+    background-color: #000;
+    margin-bottom: 55px;
+}
+
+.footer_social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 72px;
+}
+.social_link + .social_link{
+    margin-left: 24px;
+}
+.footer_texts{
+    display: flex;
+    justify-content: center;
+}
+.footer_text{
+    font-size: 14px;
+}
+.footer_text + .footer_text{
+    margin-left: 14px;
+}
+
+
+
+@media (max-width:1200px) {
+    .girlfriend_item_title{
+        font-size: 40px;
+        line-height: 40px;
+    }
+}
+@media (max-width:1080px) {
+    .bigcard_secondary_text{
+        font-size: 38px;
+        line-height: 48px;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width:1000px) {
+    .girlfriend_item{
+        width: 100%;
+    }
+    .girlfriend_item_body{
+        padding: 30px;
+    }
+    .occasions{
+        margin-bottom: 40px;
+    }
+    .occasions_cards{
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .occasions_card{
+        width: 45%;
+    }
+    .occasions_card + .occasions_card{
+        margin-bottom: 70px;
+        margin-left: 0px;
+    }
+    .blogs_bigcard{
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .bigcard_left{
+        display: none;
+    }
+
+}
+
+
+@media (max-width: 820px) {
+    /* .smallcard_title {
+        font-size: 18px;
+        line-height: 140.62%;
+    }
+    .smallcard_secondary_text{
+        font-size: 16px;
+    }
+    .smallcard_bottom_text{
+        font-size: 13px;
+    } */
+    .blogs_smallcards{
+        flex-wrap: wrap;
+    }
+    .small_card + .small_card {
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 746px) {
+    .getstarted_text{
+        margin-right: 0px;
+    }
+    .footer_menu_item + .footer_menu_item {
+        margin-left: 34px;
+    }
+    .footer_social {
+  
+        margin-bottom: 42px;
+    }
+    .burger_icon{
+        display: block !important;
+    }
+    .menu{
+        display: none;
+    }
+    .header_button{
+        display: none;
+    }
+    .bigcard_main{
+        padding: 63px 100px 49px 78px;
+    }
+}
+
+@media (max-width: 555px) {
+    .occasions_card{
+        width: 80%;
+        margin-bottom: 50px !important;
+    }
+}
+@media (max-width: 525px) {
+   .getstarted_buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+   }
+   .getstarted_btn{
+    margin-bottom: 15px;
+    margin-left: 0px !important;
+   }
+   .bigcard_secondary_text{
+    font-size: 28px;
+    line-height: 32px;
+   }
+   .bigcard_main{
+    padding: 43px 40px 39px 48px;
+}
+}
+@media (max-width: 442px) {
+    .occasions {
+        margin-bottom: 20px;
+    }
+    
+.girlfriend {
+    margin-top: 60px;
+    margin-bottom: 36px !important;
+}
+.girlfriend_item_title{
+    font-size: 28px;
+    line-height: 34px;
+    margin-bottom: 20px;
+}
+    .girlfriend_item_text1{
+        font-size: 18px;
+    }
+    .girlfriend_item_button1 {
+        margin-top: 22px;
+    }
+    .occasions_title{
+        font-size: 24px;
+    }
+    .occasions_subtitle{
+        font-size: 18px;
+    }
+    .blogs_title{
+        font-size: 24px;
+    }
+    .blogs_subtitle{
+        font-size: 18px;
+    }
+    .smallcard_title{
+        font-size: 20px;
+    }
+    .smallcard_secondary_text{
+        font-size: 18px;
+    }
+}
+@media (max-width: 385px) {
+    .getstarted_title {
+        font-size: 24px;
+    }
+    .getstarted_subtitle {
+        font-size: 22px;
+    }
+}
+@media (max-width: 320px) {
+    .bigcard_secondary_text{
+        font-size: 22px;
+        line-height: 23px;
+       }
+   .bigcard_main{
+    padding: 23px 40px 39px 28px;
+    }
+   
+
+}
